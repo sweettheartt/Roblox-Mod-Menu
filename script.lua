@@ -1,84 +1,75 @@
--- this is an example for the script, use this to make your own! (Might be adding custom Themes)
-local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/7yhx/kwargs_Ui_Library/main/source.lua"))()
+-- Importando a biblioteca de UI
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/7yhx/kwargs_Ui_Library/main/source.lua"))()
 
-local UI = Lib:Create{
-   Theme = "Dark", -- or any other theme
-   Size = UDim2.new(0, 555, 0, 400) -- default
-}
+-- Criando a janela principal
+local Window = Library:CreateWindow("Roblox Mod Menu")
 
-local Main = UI:Tab{
-   Name = "Main"
-}
+-- Criando uma aba para as funcionalidades
+local Tab = Window:CreateTab("Funções")
 
-local Divider = Main:Divider{
-   Name = "Main shit"
-}
+-- Variáveis de configuração
+local ESPEnabled = false
+local speedMultiplier = 2
+local superJumpPower = 100
+local noClipEnabled = false
 
-local QuitDivider = Main:Divider{
-   Name = "Quit"
-}
+-- Função para ativar/desativar ESP
+Tab:CreateToggle("Ativar ESP", function(state)
+    ESPEnabled = state
+    if ESPEnabled then
+        createESP() -- Chame a função de criação de ESP aqui
+    end
+end)
 
--- All functions have the Name, Description and Callback arguments so you can use them whenever ig yeah
-local KillAll = Divider:Button{
-   Name = "Kill all",
-   Description = "Kills all the players in the game!",
-   Callback = function()
-       print("All players killed.")
-   end
-}
+-- Controle de velocidade
+Tab:CreateSlider("Multiplicador de Velocidade", 1, 10, function(value)
+    speedMultiplier = value
+    setSpeed() -- Chame a função de configuração de velocidade aqui
+end)
 
-local LoopKillAll = Divider:Toggle{
-   Name = "Loop kill all",
-   Description = "Loop kills everyone in the game.",
-   Callback = function(State)
-       print("Kill state: ", State)
-   end
-}
+-- Controle de Super Jump
+Tab:CreateSlider("Poder de Super Jump", 50, 200, function(value)
+    superJumpPower = value
+    superJump() -- Chame a função de super jump aqui
+end)
 
-local OtherToggleStyle = Divider:Toggle{
-   Name = "2nd style of toggle",
-   Style = 2
-}
+-- Atalhos para ativar/desativar No Clip
+Tab:CreateToggle("Ativar No Clip", function(state)
+    noClipEnabled = state
+    toggleNoClip() -- Chame a função de toggle de No Clip aqui
+end)
 
-local Players = Divider:Dropdown{
-   Name = "Player list",
-   Options = {"Player1", "Player2", "Player3", "Player4", "Player5"},
-   Callback = function(Value)
-       print(Value)
-   end
-}
+-- Funções de funcionalidade
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
 
-Divider:ColorPicker{
-   Name = "ESP color",
-   Default = Color3.fromRGB(0, 255, 255), -- default,
-   Callback = function(Value)
-       print(Value)
-   end
-}
+local function createESP()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v:IsA("Model") and v:FindFirstChild("Humanoid") and v.Name ~= player.Name then
+            local highlight = Instance.new("Highlight", v)
+            highlight.FillColor = Color3.new(1, 0, 0) -- Cor do ESP
+            highlight.OutlineColor = Color3.new(0, 0, 0) -- Cor da borda
+        end
+    end
+end
 
-Divider:Box{
-   Name = "Car name",
-   ClearText = true, -- whether the textbox clears on focus or not
-   Callback = function(Value)
-       print(Value)
-   end
-}
+local function setSpeed()
+    humanoid.WalkSpeed = 16 * speedMultiplier
+end
 
-Divider:SearchDropdown{
-   Name = "Teleports",
-   Options = {"Pleasant Park", "Loot Lake", "Tomato Town", "Wailing Woods", "Anarchy Acres", "Retail Row"},
-   ClearText = false, -- default
-   Callback = function(Value)
-       print(Value)
-   end
-}
+local function superJump()
+    humanoid.JumpPower = superJumpPower
+end
 
-local Quit = QuitDivider:Button{
-   Name = "Closes the ui library.",
-   Callback = function()
-       UI:Quit{
-           Message = "Fuck off...", -- closing message
-           Length = 1 -- seconds the closing message shows for
-       }
-   end
-}
+local function toggleNoClip()
+    noClipEnabled = not noClipEnabled
+    for _, part in pairs(character:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = not noClipEnabled
+        end
+    end
+end
+
+-- Inicializando a GUI
+Window:Show()
