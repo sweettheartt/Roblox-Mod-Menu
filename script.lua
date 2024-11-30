@@ -77,5 +77,10 @@ local function setPlayerSpeed(speed)
 end
 
 -- Conectando as funções aos callbacks dos toggles e sliders
-espToggle.Callback = toggleESP
-speedSlider.Callback = setPlayerSpeed
+espToggle.Callback = function(value)
+    toggleESP(value) -- Chama a função toggleESP
+end
+
+speedSlider.Callback = function(value)
+    setPlayerSpeed(value) -- Chama a função setPlayerSpeed
+end
