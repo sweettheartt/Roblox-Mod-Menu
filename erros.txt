@@ -1,19 +1,261 @@
-[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#67C554" style="Normal" weight="500" >[SUCCESS] </font> Welcome to Fluxus Android!
-[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> :5: attempt to call missing method 'CreateWindow' of table
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
     Stack Begin
-    Script '', Line 5
-    Script '', Line 10
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
     Stack End
-[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> :5: attempt to call missing method 'CreateWindow' of table
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
     Stack Begin
-    Script '', Line 5
-    Script '', Line 10
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
     Stack End
-[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> :5: attempt to call missing method 'CreateWindow' of table
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
     Stack Begin
-    Script '', Line 5
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
     Stack End
-[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> :5: attempt to call missing method 'CreateWindow' of table
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
     Stack Begin
-    Script '', Line 5
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
     Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" style="Normal" weight="500" >[ERROR] </font> The current thread cannot access 'Sound' (lacking capability LegacySound)
+    Stack Begin
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 228
+    Script 'Players.HosteenOntop.PlayerScripts.RbxCharacterSounds', Line 265
+    Stack End
+[10:43] <font family="rbxasset://fonts/families/GothamSSm.json" color="#E03232" styl
