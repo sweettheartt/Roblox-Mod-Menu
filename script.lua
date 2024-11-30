@@ -1,43 +1,72 @@
 -- Importando a biblioteca de UI
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/7yhx/kwargs_Ui_Library/main/source.lua"))()
 
--- Criando a janela principal
-local Window = Library:CreateWindow("Roblox Mod Menu")
+-- Criando a interface do usuário
+local UI = Library:Create{
+    Theme = "Dark", -- ou qualquer outro tema
+    Size = UDim2.new(0, 555, 0, 400) -- tamanho padrão
+}
 
 -- Criando uma aba para as funcionalidades
-local Tab = Window:CreateTab("Funções")
+local Main = UI:Tab{
+    Name = "Funções"
+}
 
--- Variáveis de configuração
-local ESPEnabled = false
-local speedMultiplier = 2
-local superJumpPower = 100
-local noClipEnabled = false
+-- Divisores para organizar a GUI
+local ESPDivider = Main:Divider{
+    Name = "ESP e Movimentação"
+}
+
+local NoClipDivider = Main:Divider{
+    Name = "No Clip"
+}
 
 -- Função para ativar/desativar ESP
-Tab:CreateToggle("Ativar ESP", function(state)
-    ESPEnabled = state
-    if ESPEnabled then
-        createESP() -- Chame a função de criação de ESP aqui
+ESPDivider:Toggle{
+    Name = "Ativar ESP",
+    Description = "Ativa ou desativa o ESP.",
+    Callback = function(state)
+        if state then
+            createESP() -- Chame a função de criação de ESP aqui
+        else
+            removeESP() -- Função para remover ESP, se necessário
+        end
     end
-end)
+}
 
 -- Controle de velocidade
-Tab:CreateSlider("Multiplicador de Velocidade", 1, 10, function(value)
-    speedMultiplier = value
-    setSpeed() -- Chame a função de configuração de velocidade aqui
-end)
+ESPDivider:Slider{
+    Name = "Multiplicador de Velocidade",
+    Min = 1,
+    Max = 10,
+    Default = 2,
+    Callback = function(value)
+        speedMultiplier = value
+        setSpeed() -- Chame a função de configuração de velocidade aqui
+    end
+}
 
 -- Controle de Super Jump
-Tab:CreateSlider("Poder de Super Jump", 50, 200, function(value)
-    superJumpPower = value
-    superJump() -- Chame a função de super jump aqui
-end)
+ESPDivider:Slider{
+    Name = "Poder de Super Jump",
+    Min = 50,
+    Max = 200,
+    Default = 100,
+    Callback = function(value)
+        superJumpPower = value
+        superJump() -- Chame a função de super jump aqui
+    end
+}
 
 -- Atalhos para ativar/desativar No Clip
-Tab:CreateToggle("Ativar No Clip", function(state)
-    noClipEnabled = state
-    toggleNoClip() -- Chame a função de toggle de No Clip aqui
-end)
+NoClipDivider:Toggle{
+    Name = "Ativar No Clip",
+    Description = "Ativa ou desativa o No Clip.",
+    Callback = function(state)
+        noClipEnabled = state
+        toggleNoClip() -- Chame a função de toggle de No Clip aqui
+    end
+}
 
 -- Funções de funcionalidade
 local player = game.Players.LocalPlayer
@@ -50,6 +79,14 @@ local function createESP()
             local highlight = Instance.new("Highlight", v)
             highlight.FillColor = Color3.new(1, 0, 0) -- Cor do ESP
             highlight.OutlineColor = Color3.new(0, 0, 0) -- Cor da borda
+        end
+    end
+end
+
+local function removeESP()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v:IsA("Model") and v:FindFirstChild("Highlight") then
+            v.Highlight:Destroy() -- Remove o ESP
         end
     end
 end
@@ -72,4 +109,4 @@ local function toggleNoClip()
 end
 
 -- Inicializando a GUI
-Window:Show()
+UI:Show()
