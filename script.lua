@@ -1,10 +1,10 @@
- -- Importando a biblioteca de UI
- local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/weakhoes/Roblox-UI-Libs/refs/heads/main/Vanis%20Lib/Vanis%20Lib%20Source.lua"))()
+ -- Importando a nova biblioteca de UI
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/weakhoes/Roblox-UI-Libs/refs/heads/main/Cerberus%20Lib/Cerberus%20Lib%20Source.lua"))()
  
  -- Criando a interface do usuário
  local UI = Library:Create{
-     Theme = "Dark", -- ou qualquer outro tema
-     Size = UDim2.new(0, 555, 0, 400) -- tamanho padrão
+     Name = "Funções", -- Nome da aba
+     Size = UDim2.new(0, 555, 0, 400) -- Tamanho padrão
  }
  
  -- Criando uma aba para as funcionalidades
@@ -12,132 +12,70 @@
      Name = "Funções"
  }
  
- -- Divisores para organizar a GUI
+ --- Divisores para organizar a GUI
  local ESPDivider = Main:Divider{
-     Name = "ESP e Movimentação"
- }
- 
- local NoClipDivider = Main:Divider{
-     Name = "No Clip"
- }
- 
+    Name = "ESP e Movimentação"
+}
+
+local NoClipDivider = Main:Divider{
+    Name = "No Clip"
+}
+
+-- Exemplo de toggle para ESP dentro do divisor correspondente
+local espToggle = Main:Toggle{
+    Name = "Ativar ESP",
+    Default = false, -- Estado inicial
+    Callback = function(value)
+        toggleESP(value) -- Chama a função toggleESP
+    end
+}
+
+-- Exemplo de slider para velocidade dentro do divisor correspondente
+local speedSlider = Main:Slider{
+    Name = "Velocidade",
+    Min = 16, -- Valor mínimo
+    Max = 100, -- Valor máximo
+    Default = 50, -- Valor padrão
+    Callback = function(value)
+        setPlayerSpeed(value) -- Chama a função setPlayerSpeed
+    end
+}
+
  -- Função para ativar/desativar ESP
- ESPDivider:Toggle{
-     Name = "Ativar ESP",
-     Description = "Ativa ou desativa o ESP.",
-     Callback = function(state)
-         if state then
-             createESP() -- Chame a função de criação de ESP aqui
-         else
-             removeESP() -- Função para remover ESP, se necessário
-         end
-     end
- }
- 
- -- Controle de velocidade
- ESPDivider:Slider{
-     Name = "Multiplicador de Velocidade",
-     Min = 1,
-     Max = 10,
-     Default = 2,
-     Callback = function(value)
-         speedMultiplier = value
-         setSpeed() -- Chame a função de configuração de velocidade aqui
-     end
- }
- 
- -- Controle de Super Jump
- ESPDivider:Slider{
-     Name = "Poder de Super Jump",
-     Min = 50,
-     Max = 200,
-     Default = 100,
-     Callback = function(value)
-         superJumpPower = value
-         superJump() -- Chame a função de super jump aqui
-     end
- }
- 
- -- Atalhos para ativar/desativar No Clip
- NoClipDivider:Toggle{
-     Name = "Ativar No Clip",
-     Description = "Ativa ou desativa o No Clip.",
-     Callback = function(state)
-         noClipEnabled = state
-         toggleNoClip() -- Chame a função de toggle de No Clip aqui
-     end
- }
- 
- -- Funções de funcionalidade
- local player = game.Players.LocalPlayer
- local character = player.Character or player.CharacterAdded:Wait()
- local humanoid = character:WaitForChild("Humanoid")
- 
- local function createESP()
-     for _, v in pairs(workspace:GetChildren()) do
-         if v:IsA("Model") and v:FindFirstChild("Humanoid") and v.Name ~= player.Name then
-             local highlight = Instance.new("Highlight", v)
-             highlight.FillColor = Color3.new(1, 0, 0) -- Cor do ESP
-             highlight.OutlineColor = Color3.new(0, 0, 0) -- Cor da borda
-         end
-     end
- end
- 
- local function removeESP()
-     for _, v in pairs(workspace:GetChildren()) do
-         if v:IsA("Model") and v:FindFirstChild("Highlight") then
-             v.Highlight:Destroy() -- Remove o ESP
-         end
-     end
- end
- 
- local function setSpeed()
-     humanoid.WalkSpeed = 16 * speedMultiplier
- end
- 
- local function superJump()
-     humanoid.JumpPower = superJumpPower
- end
- 
- local function toggleNoClip()
-     noClipEnabled = not noClipEnabled
-     for _, part in pairs(character:GetDescendants()) do
-         if part:IsA("BasePart") then
-             part.CanCollide = not noClipEnabled
-         end
-     end
- end
- 
- -- Inicializando a GUI
- UI:Show()
- 
- -- Função para minimizar a GUI
- local MinimizeGui = false
- local MinimizedIcon
- 
- local function minimize()
-     MinimizeGui = true
-     MinimizedIcon = Instance.new("ImageButton")
-     MinimizedIcon.Name = "MinimizedIcon"
-     MinimizedIcon.Size = UDim2.new(0, 50, 0, 50)
-     MinimizedIcon.Position = UDim2.new(0.5, -25, 0.5, -25)
-     MinimizedIcon.Image = "http://www.roblox.com/asset/?id=6035067836" -- Ícone de minimização
-     MinimizedIcon.Parent = game.CoreGui
- 
-     MinimizedIcon.MouseButton1Click:Connect(function()
-         MinimizedIcon:Destroy()
-         MinimizeGui = false
-         UI:Show()
-     end)
- 
-     UI:Hide()
- end
- 
- -- Conexões dos botões de minimizar e fechar
- local CloseButton = UI:CreateButton("Fechar", function()
-     game:Shutdown() -- Encerra o script
- end)
- 
- local MinimizeButton = UI:CreateButton("Minimizar", function()
-     minimize() -- Chama a função de minimizar
- end)
+ local function toggleESP(enabled)
+    if enabled then
+        -- Lógica para ativar ESP
+        for _, player in pairs(game.Players:GetPlayers()) do
+            if player ~= game.Players.LocalPlayer then
+                local highlight = Instance.new("Highlight")
+                highlight.Adornee = player.Character or player.CharacterAdded:Wait()
+                highlight.FillColor = Color3.new(1, 0, 0) -- Cor do ESP
+                highlight.FillTransparency = 0.5 -- Transparência do ESP
+                highlight.Parent = player.Character
+            end
+        end
+    else
+        -- Lógica para desativar ESP
+        for _, player in pairs(game.Players:GetPlayers()) do
+            if player ~= game.Players.LocalPlayer and player.Character then
+                for _, highlight in pairs(player.Character:GetChildren()) do
+                    if highlight:IsA("Highlight") then
+                        highlight:Destroy()
+                    end
+                end
+            end
+        end
+    end
+end
+
+-- Função para ajustar a velocidade do jogador
+local function setPlayerSpeed(speed)
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+        player.Character.Humanoid.WalkSpeed = speed
+    end
+end
+
+-- Conectando as funções aos callbacks dos toggles e sliders
+espToggle.Callback = toggleESP
+speedSlider.Callback = setPlayerSpeed
